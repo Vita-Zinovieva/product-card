@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="sass/style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+    
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="header__content">
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu">
+          <span class="hamb-line"></span>
+        </label>
+        <img src="images/logo.svg" alt="" class="header__logo-menu"> 
+        
+        <div class="wrapper">
+          <ul class="header__navbar">
+            <a href="#">
+              <li class="navbar-item">Collections</li>
+            </a>
+            <a href="#">
+              <li class="navbar-item">Men</li>
+            </a>
+            <a href="#">
+              <li class="navbar-item">Women</li>
+            </a>
+            <a href="#">
+              <li class="navbar-item">About</li>
+            </a>
+            <a href="#">
+              <li class="navbar-item">Contact</li>
+            </a>
+          </ul>
+        </div>
+        <div class="header__icons">
+          <img id="icon-card" src="images/icon-cart.svg" alt="" class="icon-card">
+          <span>
+            <p id="myinput" type="number" value="" class="icon-span">0</p>
+          </span>
+          <img src="images/image-avatar.png" alt="" class="icon-avatar">
+        </div>
+      </div>
+      <hr class="hr">
+    </div>
+    <form id="card" class="card-overlap" >
+      <p class="card-overlap__name">Card</p>
+      <hr>
+      <div class="card-overlap__contant">
+        <img src="images/image-product-1.jpg" alt="product" class="card-photo">
+        <div class="card-overlap__text">
+          <h3 class="card-overlap__title">Fall Limited Edition Sneils</h3>
+          <div class="card-overlap__price">
+            <p class="price-1" type="number">125.00</p>
+            <img src="images/icon-close.svg" alt="" class="card-x">
+            <input id="count2Number" type="number" value="1" class="counter__value counter-number number">
+            <div class="price-2" id="price" type="number">0</div> 
+          </div>
+        </div>
+      </div>
+      <button id="btn" class="card-overlap__btn" type="submit">Chackout</button>
+    </form> 
+  </header>
+<main class="main">
+  <div class="main__photo-gallery" >
+    <div class="mySlides" style=" display: none;">
+        <img src="images/image-product-1.jpg" class="primery-photo">
+    </div>
+  
+    <div class="mySlides">
+        <img src="images/image-product-2.jpg" class="primery-photo">
+    </div>
+  
+    <div class="mySlides">
+        <img src="images/image-product-3.jpg" class="primery-photo">
+    </div>
+  
+    <div class="mySlides">
+        <img src="images/image-product-4.jpg" class="primery-photo">
+    </div>
+    
+    <div class="main__small-photo" >
+      <div class="column">
+        <img class="demo small-photo" src="images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo small-photo" src="images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo small-photo" src="images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo small-photo" src="images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      
+    </div>
+  </div>
+  <!--    <div class="main__photo-gallery">
+      <img src="images/image-product-1.jpg" alt="photo-product" class="primery-photo">
+     <div class="main__small-photo">
+        <img src="images/image-product-1-thumbnail.jpg" alt="photo-product" class="small-photo">
+        <img src="images/image-product-2-thumbnail.jpg" alt="photo-product" class="small-photo">
+        <img src="images/image-product-3-thumbnail.jpg" alt="photo-product" class="small-photo">
+        <img src="images/image-product-4-thumbnail.jpg" alt="photo-product" class="small-photo">
+      </div>
+    </div> -->
+  <div class="main-product">
+    <div class="main__content">
+      <h2 class="main__name">SNEAKER COMPANY</h2>
+      <h1 class="main__primery-title">Fall Limited Edition Sneakers</h1>
+      <p class="main-text">These low-profile sneakers are your perfect casual wear companion.
+        Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+    </div>
+    <div class="main__price">
+      <div class="main__price-new">$125.00</div>
+      <div class="main__discont">-50%</div>
+      <div class="main__price-old">$250.00</div>
+    </div>
+    <div class="main__counter">
+      <div class="window-counter">
+
+        <button class="counter__btn" data-direction="plus">
+          <img id="buttonCountPlus" src="images/icon-plus.svg" alt="plus" class="counter-plus">
+        </button>
+
+        <input id="countNumber" type="number" value="0" class="counter__value counter-number">
+        
+        <button class="counter__btn" data-direction="minus">
+        <img  id="buttonCountMinus" src="images/icon-minus.svg" alt="minus" class="counter-minus">  
+        </button>
+      </div>
+      
+      <button class="main__couter-button" id="num">
+        <img src="images/icon-cart 1.svg" alt="" class="icon-basket">
+        <p class="button-text">Add to cart</p>
+      </button>
+    </div>
+  </div>
+  </main> 
+
+  
+  
+<script src="main.js"></script>
+  
+</body>
+
+</html>

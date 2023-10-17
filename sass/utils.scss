@@ -1,0 +1,35 @@
+:root{
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(220, 14%, 75%);
+  --orange: hsl(26, 100%, 55%);
+  --pale-range: hsl(25, 100%, 94%);
+  --light-grayish-blue: hsl(223, 64%, 98%);
+  --black: hsl(0, 0%, 0%); //(with 75% opacity for lightbox background)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap');
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ font-family: 'Kumbh Sans';
+ font-size: 16px; //(paragraph)
+}
+a{
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+section {
+  //margin-bottom: 60px;
+  @media screen and (width < 767px) {
+    //margin-bottom: 30px;
+  }
+}
