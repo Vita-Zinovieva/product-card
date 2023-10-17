@@ -200,13 +200,19 @@
 }
 .counter-number {
   background-color: #F3F3F3;
-  width: 15px;
+  width: 25px;
   color: #000;
   font-family: Kumbh Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .counter-minus {
   width: 15px;
